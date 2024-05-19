@@ -42,6 +42,9 @@ dependencies:
   vue-axios:
     specifier: ^3.5.2
     version: 3.5.2(axios@1.6.7)(vue@3.4.21)
+  vue-horizontal:
+    specifier: ^1.0.2
+    version: 1.0.2(vue@3.4.21)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.0(vue@3.4.21)
@@ -5874,6 +5877,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-horizontal@1.0.2(vue@3.4.21):
+    resolution: {integrity: sha512-prxGBFpChYoh/rrZmPdPO5VtQLkF8uu6/JFdd+lJvhln4lRB55IiOSwB4IVrL+GlGLXcooGV0QTKGGW9RqfjIA==}
+    peerDependencies:
+      vue: ^3.0.5
+    dependencies:
+      vue: 3.4.21(typescript@5.4.2)
+    dev: false
 
   /vue-router@4.3.0(vue@3.4.21):
     resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}

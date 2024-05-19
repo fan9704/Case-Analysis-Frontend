@@ -4,44 +4,17 @@ import type DrawerMenuItem from '@/interfaces/DrawerMenuItemInterface';
 /** Drawer menu items */
 const items: DrawerMenuItem[] = [
   {
-    title: '首頁-訂單管理',
+    title: '首頁-病例管理',
     icon: 'mdi-home',
     to: { name: 'Index' },
   },
   {
     title: '-', // Divider
   },
-  // Order
   {
-    title: '訂單排程',
-    icon: 'mdi-camera-timer',
-    to: { name: 'OrderSchedule' },
-  },
-  {
-    title: '訂單管理',
-    icon: 'mdi-camera-timer',
-    to: { name: 'Order' },
-  },
-  {
-    title: '新增訂單',
-    icon: 'mdi-camera-timer',
-    to: { name: 'OrderCreateView' },
-  },
-  // Part
-  {
-    title: '新增零件',
-    icon: 'mdi-cog',
-    to: { name: 'Part' },
-  },
-  {
-    title: '零件管理',
-    icon: 'mdi-cog',
-    to: { name: 'PartManagement' },
-  },
-  {
-    title: '帳戶管理',
-    icon: 'mdi-information',
-    to: { name: 'Account' },
+    title: '首頁-病例比較',
+    icon: 'mdi-judge',
+    to: { name: 'Judge' },
   },
 ];
 </script>
