@@ -46,11 +46,9 @@ onMounted(() => {
     <v-container>
       <v-row>
         <v-col cols="6">
-          <v-text id="case-title">
+          <b id="case-title">
             放克醫院
-          </v-text>
-
-
+          </b>
           <v-img :src="Hospital" id="case-logo"></v-img>
         </v-col>
         <v-col cols="6">
@@ -84,54 +82,54 @@ onMounted(() => {
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
           <hr style="height:2px;border-width:0;color:gray;background-color:gray">
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>病歷背景:</b> {{ caseData.background }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>臨床發現:</b> {{ caseData.clinical_findings }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>診斷過程:</b> {{ caseData.diagnostic_process }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>干預與治療:</b> {{ caseData.intervention_and_treatment }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>結果:</b> {{ caseData.outcome }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>討論:</b> {{ caseData.discuss }}
 
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="case-text">
 
           <b>原始病理:</b> {{ caseData.pathology }}
 
@@ -151,6 +149,12 @@ onMounted(() => {
 #case-logo {
   height: 90px;
 
+}
+.case-text {
+  font-size: 16px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 page {
