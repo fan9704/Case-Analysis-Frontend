@@ -16,11 +16,6 @@ const routes: RouteRecordRaw[] = [
     // component: async () => await import('@/views/index/IndexView.vue'),
     component: async () => await import('@/views/case/IndexView.vue'),
   },
-  // {
-  //   path: '/part',
-  //   name: 'Part',
-  //   component: async () => await import('@/views/PartView.vue'),
-  // },
   {
     path: '/case/:id',
     name: 'CaseView',
@@ -32,28 +27,17 @@ const routes: RouteRecordRaw[] = [
     name: 'Judge',
     component: async () => await import('@/views/judge/IndexView.vue'),
   },
-  // {
-  //   path: '/order',
-  //   name: 'Order',
-  //   component: async () => await import('@/views/OrderView.vue'),
-  // },
-  // {
-  //   path: '/order/:id',
-  //   name: 'OrderEdit',
-  //   component: async () => await import('@/views/OrderEditView.vue'),
-  //   props: true,
-  // },
-  // {
-  //   path: '/order/create',
-  //   name: 'OrderCreateView',
-  //   component: async () => await import('@/views/OrderCreateView.vue'),
-  // },
-  // {
-  //   path: '/order/schedule',
-  //   name: 'OrderSchedule',
-  //   component: async () => await import('@/views/ScheduleView.vue'),
-
-  // },
+  {
+    path: '/pathology',
+    name: 'Pathology',
+    component: async () => await import('@/views/pathology/IndexView.vue'),
+  },
+  {
+    path: '/pathology/:id',
+    name: 'PathologyView',
+    component: async () => await import('@/views/pathology/SingleView.vue'),
+    props: true,
+  },
 ]
 
 

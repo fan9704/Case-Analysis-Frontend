@@ -12,9 +12,14 @@ const items: DrawerMenuItem[] = [
     title: '-', // Divider
   },
   {
-    title: '首頁-病例比較',
-    icon: 'mdi-judge',
+    title: '病例比較',
+    icon: 'mdi-compare',
     to: { name: 'Judge' },
+  },
+  {
+    title: '病理管理',
+    icon: 'mdi-medical-bag',
+    to: { name: 'Pathology' },
   },
 ];
 </script>
