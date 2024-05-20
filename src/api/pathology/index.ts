@@ -8,6 +8,12 @@ export function listPathology(): Promise<Pathology[]> {
     method: "get",
   });
 }
+export function getPathologyById(id: number): Promise<Pathology> {
+  return request({
+    url: `/pathology/${id}/`,
+    method: "get",
+  });
+}
 export function convertPathologyToCase(id: number): Promise<Case> {
   return request({
     url: `/pathology/convert/${id}/`,
